@@ -1,0 +1,66 @@
+* {
+	margin:0px;
+}
+
+/* 页面顶部 */
+#header {
+	height: 80px;
+}
+
+#headerCenter {
+	width:90%;
+	height: 80px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background: yellow;*/
+}
+
+#headerCenter p {
+	margin: 0px 5%;
+}
+
+#headerCenter hr {
+	width:31%;
+	border-radius: 3px;
+    border-width: 3px;
+    border-color: #B3B5CD;
+}
+
+/* 页面body部分 */
+.current {
+	width:90%;
+	/*height:620px;*/
+	margin:0 auto;
+	/*background-color: red;*/
+}
+
+.currentCenter {
+	width:85%;
+	/*height: 500px;*/
+	margin: 0 auto;
+	/*background-color: blue;*/
+}
+
+.currentCenterTop {
+	width: 100%;
+	height: 50px;
+	/*background:green;*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.currentRight {
+	width:60%;
+	height: 50px;
+}
+
+table {
+	text-align: center;
+}
+
+th {
+	text-align: center;
+}

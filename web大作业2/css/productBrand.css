@@ -1,0 +1,44 @@
+* {
+	margin: 0px;
+}
+
+.img-bottom {
+	width: 100%;
+	height: 20%;
+}
+
+.new-bootom {
+	height: 1021px;
+}
+
+.new-bootom-center_top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.new-little-title {
+	width:41%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.new-little-title p:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+.new_line {
+	height:33%;
+}
+
+.new-modal2 {
+	height:80%;
+}
+
+.new_contentRight_left_Top {
+	padding-top: 14px;
+}

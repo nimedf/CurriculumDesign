@@ -1,0 +1,177 @@
+* {
+	margin: 0px;
+}
+
+.littleTitle {
+	width:100%;
+	height:65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shopInfo {
+	width: 100%;
+	height: 1400PX;
+}
+
+.main {
+	width:73%;
+	height: 94%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.shopInfo_left {
+	width:45%;
+	height: 100%;
+}
+
+.shopInfo_center {
+	width:5%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.shopInfo_right {
+	width: 45%;
+	height: 100%;
+}
+
+.city1 {
+	width:100%;
+	height:29%;
+	font-size: 14px;
+}
+
+.city1 img {
+	width: 100%;
+	height: 80%;
+	margin-top:10px;
+}
+
+.city2 {
+	width: 100%;
+	height: 26%;
+	text-align: right;
+	line-height: 25px;
+}
+
+.city3 {
+	width: 100%;
+	height: 13%;
+	text-align: right;
+	line-height: 25px;
+}
+
+.city4 {
+	width: 100%;
+	height: 13%;
+	text-align: right;
+	line-height: 25px;
+}
+
+.city5 {
+	width: 100%;
+	height: 11%;
+	text-align: right;
+	line-height: 25px;
+}
+
+.city6 {
+	width: 100%;
+	height: 8%;
+	text-align: right;
+	line-height: 25px;
+}
+
+.city7 {
+	width: 100%;
+	height: 15%;
+}
+
+.city8 {
+	width: 100%;
+	height: 30%;
+	text-align: left;
+	line-height: 25px;
+	font-size: 14px;
+}
+.city9 {
+	width: 100%;
+	height: 17%;
+	text-align: left;
+	line-height: 25px;
+}
+
+.city10 {
+	width: 100%;
+	height: 12%;
+	text-align: left;
+	line-height: 25px;
+}
+
+.city11 {
+	width: 100%;
+	height: 12%;
+	text-align: left;
+	line-height: 25px;
+}
+
+.city12 {
+	width: 100%;
+	height: 12%;
+	text-align: left;
+	line-height: 25px;
+}
+
+.city13 {
+	width: 100%;
+	height: 5%;
+	text-align: left;
+	line-height: 25px;
+}
+
+.black_overlay{
+     display: none; 
+     position: absolute;  
+     top: 109%;  
+     left: 25%;  
+     width: 60%;  
+     height: 80%;  
+     background-color: rgba(0,0,0,0.8)!important;
+     background-color: black;  
+     z-index:900; 
+     filter: alpha(opacity=80);
+}
+
+.img-center {
+	position:absolute;
+	top: 9%;  
+    left: 15%;
+}
+
+.img-left {
+	position:absolute;
+	top: 41%;  
+    left: -1%;
+}
+
+.img-right {
+	position:absolute;
+	top: 41%;  
+    left: 89%;
+}
+
+.close {
+	display: none; 
+	 position: absolute;  
+	 top: 101%;  
+	 left: 83%;   
+	width:50px;
+	height: 50px;
+	font-size: 40px;
+}

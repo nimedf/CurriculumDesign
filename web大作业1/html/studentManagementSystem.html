@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>学生信息管理系统</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/studentManagementSystem.css">
+		<script type="text/javascript" src="../js/studentManagementSystem.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="headerCenter">
+				<hr/>
+				<p>学生信息管理系统</p>
+				<hr/>
+			</div>
+		</div>
+
+		<div class="current">
+			<div class="currentCenter">
+				<div class="currentCenterTop">
+					<div class="currentLeft">
+						<button class="btn btn-primary" data-toggle="modal" data-target="#addData">新增</button>
+						<button class="btn btn-primary" data-toggle="modal" onclick="deleteData()">删除</button>
+					</div>
+					<div class="currentRight">
+					<div class="col-lg-6"></div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">搜索</button>
+								</span>
+								<input type="text" class="form-control">
+							</div><!-- /input-group -->
+						</div><!-- /.col-lg-6 -->
+					</div>
+				</div>
+				<div class="currentBottom">
+					<table id="tabel" class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th><input class="checks" name="disableDelete" type="checkbox" onclick="generations()"></th>
+								<th>序号</th>
+								<th>学号</th>
+								<th>姓名</th>
+								<th>学院</th>
+								<th>专业</th>
+								<th>年级</th>
+								<th>班级</th>
+								<th>年龄</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>1</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>2</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>3</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>4</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>5</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>6</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>7</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>8</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>9</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox"></td>
+								<td>10</td>
+								<td>11603080201</td>
+								<td>涂淇</td>
+								<td>计算机学院</td>
+								<td>软件工程</td>
+								<td>大二</td>
+								<td>软件工程2班</td>
+								<td>19</td>
+								<td>
+									<a href="#" class="active" title="查看" onclick="seeTheData(this)">
+										<span class="glyphicon glyphicon-eye-open"></span>
+									</a>
+									<a href="#" class="active" style="color: black;" title="修改" onclick="changeData(this)">
+										<span class="glyphicon glyphicon-pencil"></span>
+									</a>
+									<a href="#" class="active" style="color: red" title="删除" onclick="getTableContent(this)">
+										<span class="glyphicon glyphicon-trash"></span>
+									</a>
+								</td>
+							</tr>
+						</tbody>						
+					</table>
+				</div>
+
+				<!-- 新增模态框（Modal） -->
+				<div class="modal fade" id="addData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myModalLabel">新增</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal" role="form">
+								  <div class="form-group">
+								    <label for="number" class="col-md-2 control-label">序号</label>
+								    <div class="col-md-10">
+								      <input type="text" class="form-control" id="number" placeholder="请输入序号">
+								    </div>
+								  </div>
+									<div class="form-group">
+										<label for="studentId" class="col-md-2 control-label">学号</label>
+										<div class="col-md-10">
+											<input class="form-control" id="studentId" type="text" placeholder="请输入学号">
+										</div>
+									</div>
+									<fieldset>
+										<div class="form-group">
+											<label for="name"  class="col-md-2 control-label">姓名</label>
+											<div class="col-sm-10">
+												<input type="text" id="name" class="form-control"  placeholder="请输入姓名">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-2 control-label">学院</label>
+											<div class="col-md-10 form-group">
+												<select id="college" class="form-control">
+													<option>计算机学院</option>
+													<option>外国语学院</option>
+													<option>车辆工程学院</option>
+													<option>知识产权学院</option>
+													<option>理学院</option>
+													<option>机械学院</option>
+													<option>管理学院</option>
+													<option>材料学院</option>
+													<option>国际学院</option>
+													<option>经济金融学院</option>
+													<option>会计学院</option>
+													<option>电气学院</option>
+													<option>药生学院</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									<div class="form-group has-success">
+										<label class="col-sm-2 control-label" for="professional">
+											专业
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="professional" placeholder="请输入专业">
+										</div>
+									</div>
+									<div class="form-group has-warning">
+										<label class="col-sm-2 control-label" for="grade">
+											年纪
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="grade" placeholder="请输入年纪">
+										</div>
+									</div>
+									<div class="form-group has-error">
+										<label class="col-sm-2 control-label" for="theClass">
+											班级
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="theClass" placeholder="请输入班级">
+										</div>
+									</div>
+									<div class="form-group has-error">
+										<label class="col-sm-2 control-label" for="age">
+											年龄
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="age">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" id="cancel" class="btn btn-default" data-dismiss="modal" onclick="AddCancel()">
+								取消
+								</button>
+								<button type="button" id="add" class="btn btn-primary" onclick="AddRow()">新增</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+				<!-- 查看模态框（Modal） -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" 
+										aria-hidden="true">×
+								</button>
+								<h4 class="modal-title" id="myModalLabel">
+									查看
+								</h4>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal" role="form">
+								  <div class="form-group">
+								    <label for="number" class="col-md-2 control-label">序号</label>
+								    <div class="col-md-10">
+								      <input type="text" class="form-control" id="newNumber" disabled>
+								    </div>
+								  </div>
+									<div class="form-group">
+										<label for="studentId" class="col-md-2 control-label">学号</label>
+										<div class="col-md-10">
+											<input class="form-control" id="newStudentId" type="text" disabled>
+										</div>
+									</div>
+									<fieldset>
+										<div class="form-group">
+											<label for="name"  class="col-md-2 control-label">姓名</label>
+											<div class="col-sm-10">
+												<input type="text" id="newName" class="form-control" disabled>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-2 control-label">学院</label>
+											<div class="col-md-10">
+												<input type="text" id="newCollege" class="form-control" disabled>
+											</div>
+										</div>
+									</fieldset>
+									<div class="form-group has-success">
+										<label class="col-sm-2 control-label" for="professional">
+											专业
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="newProfessional" disabled>
+										</div>
+									</div>
+									<div class="form-group has-warning">
+										<label class="col-sm-2 control-label" for="grade">
+											年纪
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="newGrade" disabled>
+										</div>
+									</div>
+									<div class="form-group has-error">
+										<label class="col-sm-2 control-label" for="theClass">
+											班级
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="newTheClass" disabled>
+										</div>
+									</div>
+									<div class="form-group has-error">
+										<label class="col-sm-2 control-label" for="age">
+											年龄
+										</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="newAge" disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				<!-- 修改模态框（Modal） -->
+				<div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h4 class="modal-title" id="myModalLabel">修改</h4>
+							</div>
+							<div class="modal-body">
+								<form class="form-horizontal" role="form">
+								  <div class="form-group">
+								    <label for="number" class="col-md-2 control-label">序号</label>
+								    <div class="col-md-10">
+								      <input type="text" class="form-control" id="changeNumber">
+								    </div>
+								  </div>
+									<div class="form-group">
+										<label for="studentId" class="col-md-2 control-label">学号</label>
+										<div class="col-md-10">
+											<input class="form-control" id="changeStudentId" type="text">
+										</div>
+									</div>
+									<fieldset>
+										<div class="form-group">
+											<label for="name"  class="col-md-2 control-label">姓名</label>
+											<div class="col-sm-10">
+												<input type="text" id="changeName" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-2 control-label">学院</label>
+											<div class="col-md-10">
+												<input type="text" id="changeCollege" class="form-control">
+											</div>
+										</div>
+									</fieldset>
+									<div class="form-group has-success">
+										<label class="col-sm-2 control-label" for="professional">专业</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="changeProfessional">
+										</div>
+									</div>
+									<div class="form-group has-warning">
+										<label class="col-sm-2 control-label" for="grade">年纪</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="changeGrade">
+										</div>
+									</div>
+									<div class="form-group has-error">
+										<label class="col-sm-2 control-label" for="theClass">班级</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="changeTheClass">
+										</div>
+									</div>
+									<div class="form-group has-error">
+										<label class="col-sm-2 control-label" for="age">年龄</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="changeAge">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" onclick="change()">确定</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</div>
+		</div>
+	</body>
+</html>
