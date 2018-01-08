@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/maze.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/exam1/GUI.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam2/version1/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam2/version1/TwentyFourPointGameAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam2/version2/FindVarietySolution.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam2/version2/TwentyFourPointGameAnimation2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam2/version3/TwentyFourPointGameAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam3/TailAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version1/ArrayListAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version1/LinkedListAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version1/MyStack.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version1/QueueAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version1/StackAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version2/BinaryTree.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version2/BinaryTreeAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version3/UnweightGraphAnimation.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam4/version3/WeightGraphAnimation1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam5/FamerAcorssRiver.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/exam6/MazeAnimation.java" charset="GBK" />
+  </component>
+</project>
